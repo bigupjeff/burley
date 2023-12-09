@@ -1,0 +1,31 @@
+<!-- wp:template-part {"slug":"header-sticky-sliding","theme":"burley","tagName":"header"} /-->
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+	<!-- wp:columns {"align":"full"} -->
+	<div class="wp-block-columns alignfull">
+		<!-- wp:column {"width":"15%"} -->
+		<div class="wp-block-column" style="flex-basis:15%"></div>
+		<!-- /wp:column -->
+		<!-- wp:column {"width":"55%"} -->
+		<div class="wp-block-column" style="flex-basis:55%">
+			<!-- wp:group {"tagName":"main","layout":{"type":"constrained"}} -->
+			<main class="wp-block-group">
+				<!-- wp:post-title {"level":1} /-->
+				<!-- wp:post-content {"lock":{"move":false,"remove":true},"layout":{"type":"constrained"}} /-->
+			</main>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+		<!-- wp:column {"width":"0%"} -->
+		<div class="wp-block-column" style="flex-basis:0%"></div>
+		<!-- /wp:column -->
+		<!-- wp:column {"width":"30%"} -->
+		<div class="wp-block-column" style="flex-basis:30%">
+			<!-- wp:template-part {"slug":"sidebar","theme":"burley","tagName":"aside"} /-->
+		</div>
+		<!-- /wp:column -->
+	</div>
+	<!-- /wp:columns -->
+</div>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer-4-columns","theme":"burley","tagName":"footer","area":"footer","align":"full"} /-->

@@ -1,0 +1,37 @@
+%input-base {
+	border-radius: var(--wp--custom--border-radius--small);
+	color: var(--wp--preset--color--bur-fg);
+	background-color: var(--wp--preset--color--bur-bg);
+	border: var(--wp--custom--border-size) solid var(--wp--preset--color--bur-fg);
+
+	&:disabled {
+		cursor: default;
+		pointer-events: none !important;
+		background-color: var(--wp--preset--color--bur-bg-alt);
+		color: var(--wp--preset--color--bur-fg-alt);
+		border-color: var(--wp--preset--color--bur-fg-alt);
+	}
+}
+
+/*
+@mixin button-base {
+	max-width: 100%;
+	overflow: visible;
+	border: 0;
+	box-shadow: none;
+	font-family: inherit;
+	font-weight: 600;
+	text-transform: uppercase;
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--50);
+	border-radius: 100rem;
+	font-size: var(--wp--preset--font-size--medium);
+	transition: all 0.35s ease-in-out;
+}
+
+%button {
+	@include button-base;
+	color: var(--wp--preset--color--bur-fg-alt);
+	background: var(--wp--preset--color--bur-accent);
+	border-color: var(--wp--preset--color--bur-accent);
+}
+*/

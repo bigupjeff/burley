@@ -1,0 +1,15 @@
+.jsSlideHeader {
+	position: fixed !important;
+	right: 0;
+	left: 0;
+	transition: all 0.25s;
+	z-index: 10;
+}
+
+.wp-site-blocks > header {
+	box-shadow: 0 0 #0000;
+
+	&.has-shadow {
+		box-shadow: var(--wp--preset--shadow--theme-soft);
+	}
+}
