@@ -2,18 +2,11 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"customTemplates": [
-		{ "name": "template-blank", "title": "Blank Page - Only Content" },
-		{ "name": "services", "title": "Services Archive" },
-		{ "name": "full-width", "title": "Full Width" },
-		{ "name": "sidebar-right", "title": "Sidebar on the Right" }
+		{ "name": "services", "title": "Services Archive" }
 	],
 	"templateParts": [
 		{ "name": "header", "title": "Header", "area": "header" },
-		{ "name": "header-centered", "title": "Header Centered", "area": "header" },
-		{ "name": "header-sticky-sliding", "title": "Header Sticky Sliding", "area": "header" },
-		{ "name": "footer", "title": "Footer", "area": "footer" },
-		{ "name": "footer-4-columns", "title": "Footer 4 Columns", "area": "footer" },
-		{ "name": "sidebar", "title": "Sidebar", "area": "uncategorized" }
+		{ "name": "footer", "title": "Footer", "area": "footer" }
 	],
 	"settings": {
 		"appearanceTools": true,
@@ -56,11 +49,15 @@
                 }
 			],
 			"palette": [
-				{ "slug": "bur-bg", "color": "#072c50", "name": "Theme Background" },
-				{ "slug": "bur-fg", "color": "#ffffff", "name": "Theme Foreground" },
-				{ "slug": "bur-bg-alt", "color": "#fff2", "name": "Theme Background Alt" },
-				{ "slug": "bur-fg-alt", "color": "#fcfcfc", "name": "Theme Foreground Alt" },
-				{ "slug": "bur-accent", "color": "#f89549", "name": "Theme Accent" },
+				{ "slug": "bur-bg","color":"#fcfcfc","name":"Theme Background"},
+				{ "slug": "bur-fg","color":"#181818","name":"Theme Foreground"},
+				{ "slug": "bur-bg-alt","color":"#044171","name":"Theme Background Alt"},
+				{ "slug": "bur-fg-alt","color":"#fff","name":"Theme Foreground Alt"},
+				{ "slug": "bur-accent","color":"#fe6150","name":"Theme Accent"},
+				{ "slug": "bur-green-light","color":"#0d9066","name":"Theme Green Light"},
+				{ "slug": "bur-green-lightest","color":"#7ee2a2","name":"Theme Green Lightest"},
+				{ "slug": "bur-green-dark","color":"#04724f","name":"Theme Green Dark"},
+				{ "slug": "bur-yellow","color":"#ffb129","name":"Theme Yellow"},
 				{ "slug": "pink-lightest", "color": "hsl(303, 53%, 88%)", "name": "Pink Lightest" },
 				{ "slug": "pink-light", "color": "hsl(303, 53%, 60%)", "name": "Pink Light" },
 				{ "slug": "pink", "color": "hsl(303, 53%, 50%)", "name": "Pink" },
@@ -111,60 +108,29 @@
 			"customFontSize": true,
 			"fontFamilies": [
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Open Sans",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "300 800",
-							"src": [
-								"file:./assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf"
-							]
-						},
-						{
-							"fontFamily": "Open Sans",
-							"fontStretch": "normal",
-							"fontStyle": "italic",
-							"fontWeight": "300 800",
-							"src": [
-								"file:./assets/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf"
-							]
-						}
+					"fontFace":[
+						{"fontFamily":"Sura","fontStretch":"normal","fontStyle":"normal","fontWeight":"700","src":["file:./assets/fonts/Sura/Sura-Bold.ttf"]},
+						{"fontFamily":"Sura","fontStretch":"normal","fontStyle":"normal","fontWeight":"400","src":["file:./assets/fonts/Sura/Sura-Regular.ttf"]}
 					],
-					"name": "Open Sans",
-					"slug": "body"
+					"fontFamily":"Sura, serif",
+					"name":"Sura",
+					"slug":"heading"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Inter",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "100 900",
-							"src": [
-								"file:./assets/fonts/Inter/Inter-VariableFont_slnt,wght.ttf"
-							]
-						}
+					"fontFace":[
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"900","src":["file:./assets/fonts/Lato/Lato-Black.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"900","src":["file:./assets/fonts/Lato/Lato-BlackItalic.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"700","src":["file:./assets/fonts/Lato/Lato-Bold.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"italic","fontWeight":"700","src":["file:./assets/fonts/Lato/Lato-BoldItalic.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"400","src":["file:./assets/fonts/Lato/Lato-Regular.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"italic","fontWeight":"400","src":["file:./assets/fonts/Lato/Lato-Italic.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"300","src":["file:./assets/fonts/Lato/Lato-Light.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"italic","fontWeight":"300","src":["file:./assets/fonts/Lato/Lato-LightItalic.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"normal","fontWeight":"100","src":["file:./assets/fonts/Lato/Lato-Thin.ttf"]},
+						{"fontFamily":"Lato","fontStretch":"normal","fontStyle":"italic","fontWeight":"100","src":["file:./assets/fonts/Lato/Lato-ThinItalic.ttf"]}
 					],
-					"fontFamily": "Inter, Arial, sans-serif",
-					"name": "Inter",
-					"slug": "heading"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Wellfleet",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/Wellfleet/Wellfleet-Regular.ttf"
-							]
-						}
-					],
-					"fontFamily": "Wellfleet, 'Rockwell Extra Bold', Palatino, serif",
-					"name": "Wellfleet",
-					"slug": "wellfleet"
+					"fontFamily":"Lato, sans-serif",
+					"name":"Lato","slug":"body"
 				}
 			],
 			"fontSizes": [
