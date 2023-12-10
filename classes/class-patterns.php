@@ -1,13 +1,13 @@
 <?php
 namespace BigupWeb\Burley;
 
+use WP_Block_Pattern_Categories_Registry;
+
 /**
  * Setup block patterns.
  *
  * @package burley
  */
-use WP_Block_Pattern_Categories_Registry;
-
 class Patterns {
 
 	/**
@@ -22,7 +22,7 @@ class Patterns {
 	 */
 	public function __construct() {
 		$this->categories = array(
-			'burley'  => array( 'label' => __( 'Burley Patterns', 'burley' ) ),
+			'burley'   => array( 'label' => __( 'Burley Theme Patterns', 'burley' ) ),
 			'bigupweb' => array( 'label' => __( 'Bigup Web Patterns', 'burley' ) ),
 		);
 	}

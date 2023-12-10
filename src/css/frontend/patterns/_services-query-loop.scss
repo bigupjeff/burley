@@ -1,0 +1,15 @@
+.queryLoopCards-coloured {
+
+	&>* { // Post Temlpate (<li> card parent).
+
+		&> * { // Stack block (card inner wrapper).
+			overflow: hidden;
+			background-color: var(--cardColour);
+		}
+
+		// Editor adds hidden items, so we have to filter them by not selecting [style="display: none;"].
+		&:nth-child( 3n+1 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--bur-yellow); }
+		&:nth-child( 3n+2 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--bur-green-light); }
+		&:nth-child( 3n+3 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--bur-accent); }
+	}
+}
