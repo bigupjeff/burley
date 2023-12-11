@@ -9,7 +9,7 @@
 		object-position: left;
 		object-fit: contain;
 		max-height: 5.3125rem;
-		transition: max-height 0.25s;
+		transition: max-height var(--wp--custom--transition--hover-time);
 	}
 
 	&.is-squished {
