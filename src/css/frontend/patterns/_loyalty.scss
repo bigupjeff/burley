@@ -1,0 +1,16 @@
+.loyalty {
+
+	&_loveBadge {
+		margin-top: -40% !important;
+	}
+
+	&_image {
+		height: 100%;
+
+		img {
+			object-fit: cover;
+			height: 100%;
+		}
+	}
+
+}
