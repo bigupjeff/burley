@@ -12,4 +12,20 @@
 		&:nth-child( 3n+2 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--bur-green-light); }
 		&:nth-child( 3n+3 of :not( *[style="display: none;"] ) )>* { --cardColour:var(--wp--preset--color--bur-accent); }
 	}
+
+	li {
+		figure {
+			overflow: hidden;
+
+			img {
+				transition: transform 2s ease-in-out;
+			}
+		}
+
+		&:hover {
+			img {
+				transform: scale(1.2);
+			}
+		}
+	}
 }

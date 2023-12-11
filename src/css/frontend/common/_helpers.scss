@@ -6,3 +6,5 @@
 .has-border-radius-large { border-radius: var(--wp--custom--border-radius--large) }
 .has-border-radius-medium { border-radius: var(--wp--custom--border-radius--medium) }
 .has-border-radius-small { border-radius: var(--wp--custom--border-radius--small ) }
+.hide-below-1000 { @media screen and (max-width: 1000px) { display: none !important; } }
+.hide-above-1000 { @media screen and (min-width: 1000.001px) { display: none !important; } }
