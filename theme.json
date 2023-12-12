@@ -2,7 +2,9 @@
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
 	"version": 2,
 	"customTemplates": [
-		{ "name": "services", "title": "Services Archive" }
+		{ "name": "services", "title": "Services Archive" },
+		{ "name": "page-with-hero", "title": "Page with Hero Image" },
+		{ "name": "page-no-title", "title": "Page without a Title" }
 	],
 	"templateParts": [
 		{ "name": "header", "title": "Header", "area": "header" },
