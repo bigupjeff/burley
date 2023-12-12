@@ -1,5 +1,5 @@
 // navbar underline colours.
-header .wp-block-navigation-item {
+header .wp-block-navigation__responsive-container:not( .has-modal-open ) .wp-block-navigation-item {
 
 	&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--bur-accent); }
 	&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--bur-yellow); }
@@ -33,6 +33,36 @@ header .wp-block-navigation-item {
 		text-decoration: none !important;
 		color: inherit;
 	}
+}
+
+// Fighting for specificity :(
+html .wp-block-navigation__responsive-container.is-menu-open {
+
+	span.wp-block-navigation-item__label {
+		font-size: var(--wp--preset--font-size--x-large) !important;
+	}	
+
+	.wp-block-navigation__responsive-container-content {
+
+		.has-child .wp-block-navigation__submenu-container {
+			border-left: solid 0.5rem #fff !important;
+			padding-top: 0rem !important;
+			margin-block-start: 1rem !important;
+		}
+		.wp-block-navigation-item,
+		.wp-block-navigation__responsive-container-content .wp-block-navigation__container,
+		.wp-block-navigation__responsive-container-content .wp-block-page-list,
+		.has-child .wp-block-navigation__submenu-container {
+			--navigation-layout-justification-setting: flex-start !important;
+			align-items: flex-start !important;
+		}
+	}
+}
+
+
+.wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item, .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container, .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-page-list {
+	--navigation-layout-justification-setting: flex-start;
+	align-items: flex-start;
 }
 
 

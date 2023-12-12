@@ -30,3 +30,7 @@ nav,
 			linear-gradient(to right, var(--wp--preset--color--bur-accent), var(--wp--preset--color--bur-accent));
 	}
 }
+
+.wp-block-button__link {
+	transition: border-radius var(--wp--custom--transition--hover-time) ease-in-out, box-shadow var(--wp--custom--transition--hover-time) ease-in-out;
+}
