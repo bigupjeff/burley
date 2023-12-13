@@ -11,5 +11,3 @@
 .hide-above-1000 { @media screen and (min-width: 1000.001px) { display: none !important; } }
 .has-responsive-h2 { h2 { @media screen and (max-width: 600px) { font-size: var(--wp--preset--font-size--xxx-large) !important; } } }
 .has-square-aspect-ratio { aspect-ratio: 1/1; }
-
-.has-upward-shadow { box-shadow: 0px -10px 12px 0px #18181888; }

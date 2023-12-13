@@ -1,5 +1,5 @@
 // navbar underline colours.
-header .wp-block-navigation__responsive-container:not( .has-modal-open ) .wp-block-navigation-item:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {
+header .wp-block-navigation__responsive-container:not( .has-modal-open ) .wp-block-navigation-item {
 
 	&:nth-child( 5n+1 ) { --menuColour: var(--wp--preset--color--bur-accent); }
 	&:nth-child( 5n+2 ) { --menuColour: var(--wp--preset--color--bur-yellow); }
@@ -7,33 +7,54 @@ header .wp-block-navigation__responsive-container:not( .has-modal-open ) .wp-blo
 	&:nth-child( 5n+4 ) { --menuColour: var(--wp--preset--color--bur-green-light); }
 	&:nth-child( 5n+5 ) { --menuColour: var(--wp--preset--color--bur-green-dark); }
 
-	&:after {
-		content: "";
-		display: block;
-		height: 0.5rem;
-		width: 100%;
-		position: absolute;
-		bottom: -0.5rem;
-	
-		background-image: 
-		linear-gradient(to right, var(--menuColour), var(--menuColour)),
-		linear-gradient(to right, var(--wp--preset--color--bur-fg-alt), var(--wp--preset--color--bur-fg-alt));
-		background-position: 100% 100%, 0 100%;
-		background-repeat: no-repeat;
-		background-size: 100%, 0;
-		transition: height var(--wp--custom--transition--hover-time) ease-in, background-size var(--wp--custom--transition--hover-time) ease-in;
-	}
+	&:not( .wp-block-navigation__submenu-container .wp-block-navigation-item ) {
+		&:after {
+			content: "";
+			display: block;
+			height: 0.5rem;
+			width: 100%;
+			position: absolute;
+			bottom: -0.5rem;
+		
+			background-image: 
+			linear-gradient(to right, var(--menuColour), var(--menuColour)),
+			linear-gradient(to right, var(--wp--preset--color--bur-fg-alt), var(--wp--preset--color--bur-fg-alt));
+			background-position: 100% 100%, 0 100%;
+			background-repeat: no-repeat;
+			background-size: 100%, 0;
+			transition: height var(--wp--custom--transition--hover-time) ease-in, background-size var(--wp--custom--transition--hover-time) ease-in;
+		}
 
-	&:hover:after {
-		height: 0.7rem;
-		background-size: 0, 100%;
-	}
+		&:hover:after {
+			height: 0.7rem;
+			background-size: 0, 100%;
+		}
 
-	a {
-		text-decoration: none !important;
-		color: inherit;
+		a {
+			text-decoration: none !important;
+			color: inherit;
+		}
 	}
 }
+
+// Dropdown item hover effect.
+.wp-block-navigation__submenu-container {
+	li {
+		transition: background-color var(--wp--custom--transition--hover-time) ease-in, color var(--wp--custom--transition--hover-time) ease-in;
+
+		a {
+			white-space: nowrap;
+			font-weight: 600;
+			color: #333;
+		}
+
+		&:hover a {
+			background-color: var(--menuColour) !important;
+			color: var(--wp--preset--color--bur-fg-alt) !important;
+		}
+	}
+}
+
 
 // Fighting for specificity :(
 html .wp-block-navigation__responsive-container.is-menu-open {
@@ -104,22 +125,4 @@ html .wp-block-navigation__responsive-container.is-menu-open {
 .wp-block-navigation .has-child .wp-block-navigation-submenu__toggle[aria-expanded=true]~.wp-block-navigation__submenu-container {
 	border-radius: var(--wp--custom--border-radius--medium);
 	overflow: hidden;
-}
-
-// Submenu item text.
-.wp-block-navigation .has-child .wp-block-navigation__submenu-container>.wp-block-navigation-item>.wp-block-navigation-item__content:not( .has-modal-open .wp-block-navigation-item__content ) {
-	white-space: nowrap;
-	font-weight: 600;
-	color: #333;
-}
-
-.wp-block-navigation__submenu-container {
-	li {
-		transition: background-color var(--wp--custom--transition--hover-time) ease-in, color var(--wp--custom--transition--hover-time) ease-in;
-
-		&:hover {
-			background-color: var(--wp--preset--color--bur-accent);
-			color: var(--wp--preset--color--bur-fg-alt);
-		}
-	}
 }
