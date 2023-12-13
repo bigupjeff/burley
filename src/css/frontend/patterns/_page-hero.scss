@@ -1,8 +1,8 @@
 .page-hero-overlap {
-	margin-block-start: -10rem;
+	margin-block-start: -10rem !important;
 	z-index: 1;
 	position: relative;
-	box-shadow: 0px -10px 12px 0px #18181888;
+	box-shadow: 0 -0.5rem 0.5rem 0 #18181888;
 
 	&.has-global-padding {
 		padding-right: 0 !important;
