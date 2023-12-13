@@ -125,6 +125,10 @@ class Theme_Setup {
 				'flex-height' => true,
 			)
 		);
+
+		// Custom image sizes.
+		add_image_size( 'page-hero', 1920, 1080, true );
+		add_image_size( 'service-cards', 700, 500, true );
 	}
 
 
