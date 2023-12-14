@@ -26,13 +26,13 @@
 	&:hover {
 		.teamCard_shape {
 			&-orange {
-				transform: translateY(-3rem) rotate(-8deg);
+				transform: translateY(-3rem) rotate(-5deg);
 			}
 			&-green {
-				transform: translateY(-3rem) rotate(8deg);
+				transform: translateY(-3rem) rotate(5deg);
 			}
 			&-red {
-				transform: translateY(-5rem);
+				transform: translateY(-4.5rem);
 			}
 		}
 	}
