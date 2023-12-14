@@ -47,6 +47,10 @@
 		}
 	}
 
+	@media screen and (max-width: 780.9999px) {
+		margin-block-start: 0;
+	}
+
 	@media screen and (min-width: 781px) {
 		.hero_imageContainer {
 			flex-basis: 40% !important;
