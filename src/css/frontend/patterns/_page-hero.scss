@@ -11,10 +11,14 @@
 }
 
 // Single template.
-.single-service .wp-block-post-featured-image,
-.page-template .wp-block-post-featured-image {
+.single-service .wp-block-post-featured-image {
 
+	z-index:-1;
 	height: 40vh !important;
+
+	a {
+		height: inherit !important;
+	}
 
 	img {
 		height: 100% !important;
