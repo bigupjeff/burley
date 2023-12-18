@@ -44,10 +44,8 @@ const slideHeader = () => {
 
 		// Style.
 		if ( isBelowFold ) {
-			header.classList.add( 'has-shadow' )
 			header.classList.add( 'is-squished' )
 		} else {
-			header.classList.remove( 'has-shadow' )
 			header.classList.remove( 'is-squished' )
 		}
 

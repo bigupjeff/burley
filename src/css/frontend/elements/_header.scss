@@ -3,13 +3,29 @@
 	top: 0;
 	right: 0;
 	left: 0;
-	transition: all var(--wp--custom--transition--hover-time);
+	transition: all var(--wp--custom--transition--hover-time) ease-in;
 	z-index: 10;
 	box-shadow: 0 0 #0000;
 	width: 100% !important;
+	min-height: 8rem; // Match inner .jsSlideHeader_grid to prevent layout shift on squish.
+	pointer-events: none;
 
-	&.has-shadow {
-		box-shadow: var(--wp--preset--shadow--theme-soft);
+
+	.wp-block-site-logo img {
+		object-position: left;
+		object-fit: contain;
+		height: 7rem;
+		transition: height var(--wp--custom--transition--hover-time);
+	}
+
+	&.is-squished {
+		.wp-block-site-logo img {
+			height: 3rem;
+		}
+
+		.jsSlideHeader_grid {
+			min-height: 4rem !important;
+		}
 	}
 
 	.wp-block-navigation-is-layout-flex {
@@ -21,10 +37,13 @@
 	}
 
 	// Header inner-container.
-	&>* {
+	.jsSlideHeader_grid {
+		gap: 1rem !important;
 		display: grid !important;
 		grid-template-columns: 0px 6rem 1fr 0px 0px !important;
-		gap: 1rem !important;
+		min-height: 8rem;
+		pointer-events: auto;
+		transition: all var(--wp--custom--transition--hover-time) ease-in;
 
 		// Nav column.
 		&>*:nth-child(3) {
@@ -66,19 +85,4 @@
 			}
 		}
 	}
-
-}
-
-.examlpe-code {
-	--narrow: minmax(0px,48rem);
-	--medium: clamp(0px,calc(50% - 24rem),8rem);
-	--wide: clamp(0px,calc(50% - 32rem),13rem);
-	display: grid;
-	gap: 0;
-	grid-column: 1/-1;
-	grid-template-columns: [full-l] 1fr [wide-l medium-l narrow-l] var(--narrow) [narrow-r medium-r wide-r] 1fr [full-r];
-	justify-content: center;
-	position: relative;
-	text-align: center;
-	width: 100%
 }
