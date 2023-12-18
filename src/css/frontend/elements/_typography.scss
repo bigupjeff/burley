@@ -33,8 +33,7 @@
 	background-image: linear-gradient(170deg, #7ee2a2 0%, #ffb129 100%);
 }
 
-@media (max-width: 450px) {
-	.has-display-small-font-size {
-		font-size: var(--wp--preset--font-size--xxx-large) !important;
-	}
+.has-display-small-font-size {
+	@media (max-width: 450px) { font-size: var(--wp--preset--font-size--xxx-large) !important; }
+	@media (max-width: 320px) { font-size: var(--wp--preset--font-size--xx-large) !important; }
 }

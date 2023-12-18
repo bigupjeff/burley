@@ -1,8 +1,16 @@
+
+.page-template-page-with-hero {
+	figure.alignfull.wp-block-post-featured-image {
+		z-index: -1;
+	}
+}
+
 .page-hero-overlap {
-	margin-block-start: -10rem !important;
+	margin-block-start: -8rem !important;
+	min-height: 9rem !important;
 	z-index: 1;
 	position: relative;
-	box-shadow: 0 -0.5rem 0.5rem 0 #18181888;
+	box-shadow: var(--wp--preset--shadow--theme-soft-up);
 
 	&.has-global-padding {
 		padding-right: 0 !important;
@@ -37,6 +45,9 @@
 		height: 70vh !important;
 	}
 
+/*
+	//These begin to push the title belo pagefold.
+
 	@media (min-width: 1500px) {
 		height: 80vh !important;
 	}
@@ -44,4 +55,5 @@
 	@media (min-width: 1800px) {
 		height: 90vh !important;
 	}
+*/
 }

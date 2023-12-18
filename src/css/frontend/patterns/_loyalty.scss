@@ -11,7 +11,7 @@
 	}
 
 	@media (min-width: 782px) {
-		margin-block-start: calc( 2 * var(--wp--custom--gutter--large) ) !important;
+		margin-block-start: var(--wp--custom--gutter--large) !important;
 	}
 
 	&_loveBadge {
