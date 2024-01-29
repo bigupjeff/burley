@@ -4,9 +4,11 @@
 	"customTemplates": [
 		{ "name": "page-with-hero", "title": "Page with Hero Image" },
 		{ "name": "page-no-title", "title": "Page without a Title" },
+		{ "name": "archive-service", "title": "Archive: Services" },
+		{ "name": "archive-review", "title": "Archive: Reviews" },
 		{ "name": "single-review", "title": "Single Review" },
 		{ "name": "single-service", "title": "Single Service" },
-		{ "name": "single-post-partner", "title": "Single Post Partner Category" }
+		{ "name": "single-post-partner", "title": "Single Post: Partner Category" }
 	],
 	"templateParts": [
 		{ "name": "header", "title": "Header", "area": "header" },
