@@ -9,17 +9,38 @@
 	min-height: 8rem; // Match inner .jsSlideHeader_grid to prevent layout shift on squish.
 	pointer-events: none;
 
+	.logoContainer {
 
-	.wp-block-site-logo img {
-		object-position: left;
-		object-fit: contain;
+		position: relative;
 		height: 7rem;
+		min-width: 7rem;
 		transition: height var(--wp--custom--transition--hover-time);
+
+		.logo-large,
+		.logo-small {
+			position: absolute;
+			height: 100%;
+			transition: opacity var(--wp--custom--transition--hover-time);
+
+			img {
+				object-position: left;
+				object-fit: contain;
+				height: 100% !important;
+			}
+		}
+
+		.logo-large { opacity: 1; }
+		.logo-small { opacity: 0; }
 	}
 
 	&.is-squished {
-		.wp-block-site-logo img {
+
+		.logoContainer {
 			height: 3rem;
+			min-width: 3rem;
+
+			.logo-large { opacity: 0; }
+			.logo-small { opacity: 1; }
 		}
 
 		.jsSlideHeader_grid {

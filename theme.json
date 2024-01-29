@@ -120,7 +120,7 @@
 			"padding": true,
 			"margin": true,
 			"blockGap": true,
-			"units": [ "rem", "vh", "vw", "%" ],
+			"units": [ "em", "rem", "vh", "vw", "%" ],
 			"spacingSizes": [
 				{ "name": "1 (0.5rem)", "slug": "20", "size": "0.5rem" },
 				{ "name": "2 (0.75rem)", "slug": "30", "size": "0.75rem" },
