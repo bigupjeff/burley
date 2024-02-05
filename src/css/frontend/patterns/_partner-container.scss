@@ -13,8 +13,8 @@
 		padding-top: var(--offset) !important;
 
 		@media (min-width: 782px) {
-			padding-top: calc( 0.5 * var(--offset) ) !important;
-			padding-bottom: calc( 0.5 * var(--offset) ) !important;
+			padding-top: 0 !important;
+			padding-bottom: calc( 0.25 * var(--offset) ) !important;
 		}
 	}
 
