@@ -248,11 +248,12 @@ $strings = array(
 					<!-- /wp:column -->
 				</div>
 				<!-- /wp:columns -->
-				<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|40","right":"var:preset|spacing|40"}}},"layout":{"type":"constrained"}} -->
-				<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--40)">
+
+				<!-- wp:group {"align":"wide","style":{"spacing":{"padding":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|60","left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}},"layout":{"type":"constrained"}} -->
+				<div class="wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--50);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--50)">
 					<!-- wp:query {"queryId":44,"query":{"perPage":"1","pages":0,"offset":0,"postType":"review","order":"desc","orderBy":"date","author":"","search":"Charlotte has been faultless","exclude":[],"sticky":"","inherit":false,"parents":[]},"align":"wide"} -->
 					<div class="wp-block-query alignwide">
-						<!-- wp:post-template -->
+						<!-- wp:post-template {"layout":{"type":"constrained"}} -->
 						<!-- wp:post-title {"textAlign":"center"} /-->
 						<!-- wp:post-content /-->
 						<!-- /wp:post-template -->
@@ -260,6 +261,7 @@ $strings = array(
 					<!-- /wp:query -->
 				</div>
 				<!-- /wp:group -->
+
 			</div>
 			<!-- /wp:group -->
 		</div>
