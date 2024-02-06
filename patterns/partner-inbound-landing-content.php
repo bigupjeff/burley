@@ -16,14 +16,14 @@ $strings = array(
 		'image'   => BURLEY_URL . 'assets/svg/pattern-images/shape-01.svg',
 	),
 	'section2' => array(
-		'title'   => __( 'Independent advice', 'burley' ),
+		'title'   => __( 'Independent Advice', 'burley' ),
 		'eyebrow' => __( 'In the heart of your town', 'burley' ),
 		'button'  => __( 'Get in touch today', 'burley' ),
 		'image'   => BURLEY_URL . 'assets/svg/pattern-images/shape-03.svg',
 	),
 	'section3' => array(
-		'title'    => __( 'Professional consultant', 'burley' ),
-		'eyebrow'  => __( 'Joanna Bloggs', 'burley' ),
+		'title'    => __( 'Joanna Bloggs', 'burley' ),
+		'eyebrow'  => __( 'Professional Consultant', 'burley' ),
 		'subtitle' => __( 'Contact Joanna', 'burley' ),
 		'image'    => BURLEY_URL . 'assets/svg/pattern-images/shape-02.svg',
 	),
@@ -141,7 +141,7 @@ $strings = array(
 							<div class="wp-block-buttons">
 								<!-- wp:button -->
 								<div class="wp-block-button">
-									<a class="wp-block-button__link wp-element-button" href="https://clarkesestates.co.uk/contact-us/" target="_blank" rel="noreferrer noopener"><?php echo esc_html( $strings['section2']['button'] ); ?></a>
+									<a class="wp-block-button__link wp-element-button" href="#" target="_blank" rel="noreferrer noopener"><?php echo esc_html( $strings['section2']['button'] ); ?></a>
 								</div>
 								<!-- /wp:button -->
 							</div>
@@ -222,9 +222,6 @@ $strings = array(
 							<!-- wp:heading {"level":4,"fontSize":"x-large"} -->
 							<h4 class="wp-block-heading has-x-large-font-size"><?php echo esc_html( $strings['section3']['subtitle'] ); ?></h4>
 							<!-- /wp:heading -->
-							<!-- wp:paragraph -->
-							<p>Mortgage and Protection Consultant</p>
-							<!-- /wp:paragraph -->
 							<!-- wp:paragraph -->
 							<p>Address First Line
 								<br>Address Second Line
