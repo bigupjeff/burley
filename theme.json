@@ -4,8 +4,9 @@
 	"customTemplates": [
 		{ "name": "page-with-hero", "title": "Page with Hero Image", "postTypes": [ "page" ] },
 		{ "name": "page-no-title", "title": "Page without a Title", "postTypes": [ "page" ] },
-		{ "name": "archive-service", "title": "Archive: Services" },
-		{ "name": "archive-review", "title": "Archive: Reviews" },
+		{ "name": "archive-service", "title": "Archive: Service Posts" },
+		{ "name": "archive-review", "title": "Archive: Review Posts" },
+		{ "name": "category-partners", "title": "Category: Partners" },
 		{ "name": "single-review", "title": "Single Review", "postTypes": [ "review" ] },
 		{ "name": "single-service", "title": "Single Service", "postTypes": [ "service" ] },
 		{ "name": "single-partners", "title": "Single Post Partners Category", "postTypes": [ "post" ] }

@@ -8,6 +8,10 @@
  * @package burley
  */
 
+$strings = array(
+	'stars' => '⭐⭐⭐⭐⭐',
+);
+
 ?>
 <!-- wp:group {"layout":{"type":"constrained"}} -->
 <div class="wp-block-group">
@@ -19,7 +23,7 @@
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
 			<div class="wp-block-group">
 				<!-- wp:paragraph {"align":"center","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
-				<p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)">⭐⭐⭐⭐⭐</p>
+				<p class="has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)"><?php echo esc_html( $strings['stars'] ); ?></p>
 				<!-- /wp:paragraph -->
 				<!-- wp:post-title {"textAlign":"center","level":3,"isLink":true,"style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"},"margin":{"top":"0","bottom":"0","left":"0","right":"0"}},"typography":{"fontStyle":"italic","fontWeight":"700"}},"fontFamily":"body"} /-->
 			</div>

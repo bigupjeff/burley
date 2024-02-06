@@ -9,14 +9,20 @@
  * @package burley
  */
 
+$strings = array(
+	'title'  => __( 'Frequently asked Questions', 'burley' ),
+	'byline' => __( 'Have questions? We have the answers!', 'burley' ),
+	'button' => __( 'Ask another question', 'burley' ),
+);
+
 ?>
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"inherit":true,"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
 	<!-- wp:heading {"textAlign":"center","className":"is-style-default"} -->
-	<h2 class="wp-block-heading has-text-align-center is-style-default">Frequently asked questions</h2>
+	<h2 class="wp-block-heading has-text-align-center is-style-default"><?php echo esc_html( $strings['title'] ); ?></h2>
 	<!-- /wp:heading -->
 	<!-- wp:paragraph {"align":"center","fontSize":"normal"} -->
-	<p class="has-text-align-center has-normal-font-size">Have questions? We have the answers!</p>
+	<p class="has-text-align-center has-normal-font-size"><?php echo esc_html( $strings['byline'] ); ?></p>
 	<!-- /wp:paragraph -->
 	<!-- wp:spacer {"height":"var:preset|spacing|50"} -->
 	<div style="height:var(--wp--preset--spacing--50)" aria-hidden="true" class="wp-block-spacer"></div>
@@ -117,7 +123,7 @@
 	<div class="wp-block-buttons">
 		<!-- wp:button {"textColor":"lonewolf-fg-alt"} -->
 		<div class="wp-block-button">
-			<a class="wp-block-button__link has-lonewolf-fg-alt-color has-text-color wp-element-button" href="#">Ask another Question</a>
+			<a class="wp-block-button__link has-lonewolf-fg-alt-color has-text-color wp-element-button" href="#"><?php echo esc_html( $strings['button'] ); ?></a>
 		</div>
 		<!-- /wp:button -->
 	</div>
