@@ -55,8 +55,8 @@ $strings = array(
 					<div class="wp-block-column" style="flex-basis:50%">
 						<!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|bur-yellow"}}}},"textColor":"bur-yellow","className":"partner-container\u002d\u002dimage","layout":{"type":"constrained"}} -->
 						<div class="wp-block-group partner-container--image has-bur-yellow-color has-text-color has-link-color">
-							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"2rem","width":"1rem"}}} -->
-							<figure class="wp-block-image size-full has-custom-border">
+							<!-- wp:image {"aspectRatio":"1","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"2rem","width":"1rem"}},"className":"partner-container\u002d\u002dlogo"} -->
+							<figure class="wp-block-image size-full has-custom-border partner-container--logo">
 								<img src="<?php echo esc_html( $strings['section1']['image'] ); ?>" alt="" style="border-width:1rem;border-radius:2rem;aspect-ratio:1;object-fit:cover"/>
 							</figure>
 							<!-- /wp:image -->
