@@ -20,7 +20,7 @@ $strings = array(
 		<!-- wp:heading {"textAlign":"center"} -->
 		<h2 class="wp-block-heading has-text-align-center"><?php echo esc_html( $strings['title'] ); ?></h2>
 		<!-- /wp:heading -->
-		<!-- wp:query {"queryId":11,"query":{"perPage":"20","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[127]}},"align":"wide"} -->
+		<!-- wp:query {"queryId":11,"query":{"perPage":"20","pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":false,"taxQuery":{"category":[27]}},"align":"wide"} -->
 		<div class="wp-block-query alignwide">
 			<!-- wp:post-template {"style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"grid","columnCount":5}} -->
 			<!-- wp:group {"style":{"spacing":{"padding":{"right":"0","left":"0","top":"0","bottom":"0"}}},"layout":{"type":"constrained","wideSize":"12rem"}} -->

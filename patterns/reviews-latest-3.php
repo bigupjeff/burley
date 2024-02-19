@@ -10,7 +10,7 @@
 
 $strings = array(
 	'title'  => __( 'Reviews', 'burley' ),
-	'byline' => __( 'Here&apos;s what our customers are saying', 'burley' ),
+	'byline' => __( 'What our customers are saying', 'burley' ),
 	'button' => __( 'See All Reviews', 'burley' ),
 	'stars'  => '⭐⭐⭐⭐⭐',
 );
