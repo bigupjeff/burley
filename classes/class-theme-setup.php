@@ -35,7 +35,6 @@ class Theme_Setup {
 		add_action( 'wp_head', array( new Head_Inject(), 'print_head_markup' ), 5, 0 );
 		add_action( 'after_setup_theme', array( $this, 'theme_supports_and_features' ), 10, 0 );
 		add_action( 'init', array( $this, 'register_taxonomy_for_default_posts' ), 10, 0 );
-		self::customise_sitemap();
 		self::remove_head_bloat();
 
 		add_action( 'init', array( new Patterns(), 'register_categories' ), 10, 0 );
@@ -157,21 +156,5 @@ class Theme_Setup {
 		remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 		remove_action( 'wp_print_styles', 'print_emoji_styles' );
 		remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
-	}
-
-
-	/**
-	 * Customise the sitemap.
-	 */
-	public static function customise_sitemap() {
-		// Remove USERS from sitemap.
-		add_filter(
-			'wp_sitemaps_add_provider',
-			function ( $provider, $name ) {
-				return ( $name == 'users' ) ? false : $provider;
-			},
-			10,
-			2
-		);
 	}
 }
