@@ -9,7 +9,8 @@
 		flex-basis: 100% !important;
 
 		.hero_image {
-			aspect-ratio: 16 / 9;
+			min-height: 100% !important;
+			aspect-ratio: 16 / 9 !important;
 			z-index: -1;
 			border-radius: 0 !important;
 		}
@@ -57,7 +58,7 @@
 
 			.hero_image {
 				border-radius: 0 !important;
-				aspect-ratio: 4/3;
+				aspect-ratio: 4/3 !important;
 			}
 		}
 		.hero_ctaContainer {
@@ -87,7 +88,7 @@
 
 			.hero_image {
 				border-radius: 0 !important;
-				aspect-ratio: 16/9;
+				aspect-ratio: 16/9 !important;
 			}
 		}
 		.hero_ctaContainer {
